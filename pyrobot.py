@@ -318,7 +318,7 @@ class Robot(object):
 			from PIL import Image
 		except ImportError as e:
 			print e
-			print "Need to have PIL installed! See: effbot.org for download"
+			print "Need to have PIL or Pillow installed! See: effbot.org or pypi.python.org for download"
 			sys.exit()
 
 		return self._make_image_from_buffer(self._get_screen_buffer(bounds))
