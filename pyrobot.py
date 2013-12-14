@@ -924,22 +924,3 @@ if __name__ == '__main__':
 	robot = Robot()
 	text = robot.get_clipboard_data()
 	print text
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
