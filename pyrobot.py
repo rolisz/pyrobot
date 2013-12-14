@@ -315,7 +315,7 @@ class Robot(object):
 		'''
 
 		try: 
-			import Image
+			from PIL import Image
 		except ImportError as e:
 			print e
 			print "Need to have PIL installed! See: effbot.org for download"
@@ -370,7 +370,7 @@ class Robot(object):
 		return hCaptureBitmap
 
 	def _make_image_from_buffer(self, hCaptureBitmap):
-		import Image
+		from PIL import Image
 		bmp_info = BITMAPINFO()
 		bmp_header = BITMAPFILEHEADER()
 		hdc = windll.user32.GetDC(None)
@@ -924,22 +924,3 @@ if __name__ == '__main__':
 	robot = Robot()
 	text = robot.get_clipboard_data()
 	print text
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
